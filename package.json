@@ -6,19 +6,23 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:type": "npx @n1rjal/pm_ts -X 'PMAK-65c7b5de55923c000185b231-394a2009dad4fd1b78c56ebad638201636' -U 'https://web.postman.co/workspace/Artha~a19aec37-da9e-4609-bd8c-18a4ac5ff8c8/collection/6105071-eff30b91-205f-417f-8f79-f9799145dc99?action=share&source=copy-link&creator=6105071&active-environment=bf001a43-828d-4703-9151-bc15997f0726' -o ./src/apis/types"
   },
   "dependencies": {
     "@tabler/icons-react": "^2.47.0",
     "antd": "^5.14.0",
     "axios": "^1.6.7",
+    "crypto-js": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-jwt": "^1.2.0",
     "react-router-dom": "^6.22.0",
     "sass": "^1.70.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^20.11.17",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
@@ -29,6 +33,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
-    "vite": "^5.1.0"
+    "vite": "^5.1.0",
+    "vite-plugin-pwa": "^0.18.0"
   }
 }
