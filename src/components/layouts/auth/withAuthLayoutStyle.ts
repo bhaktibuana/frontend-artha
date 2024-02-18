@@ -10,8 +10,9 @@ export const LayoutWrapper = styled.div<ILayoutWrapperProps>`
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  padding: ${size.size_96}
-    ${(props) => (props.viewType === "desktop" ? 0 : size.size_20)} 0;
+  padding: ${(props) =>
+      props.viewType === "desktop" ? size.size_96 : size.size_32}
+    ${(props) => (props.viewType === "desktop" ? 0 : size.size_16)} 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
