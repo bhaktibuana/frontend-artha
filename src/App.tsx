@@ -1,7 +1,12 @@
+import MultiProvider from "@/contexts";
+import AppRouters from "@/routers";
+
 const App = () => {
   return (
     <>
-      <span>Hello Artha</span>
+      <MultiProvider>
+        <AppRouters />
+      </MultiProvider>
     </>
   );
 };
