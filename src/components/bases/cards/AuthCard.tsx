@@ -4,11 +4,11 @@ import { useWindowViewContext } from "@/contexts/WindowViewProvider";
 
 import { ICardWrapper } from "@/components/bases/cards/AuthCardStyle";
 
-interface IAuthCardProps {
+interface IBaseAuthCardProps {
   children?: ReactNode;
 }
 
-const AuthCard: React.FC<IAuthCardProps> = (props) => {
+const BaseAuthCard: React.FC<IBaseAuthCardProps> = (props) => {
   const { windowViewType } = useWindowViewContext();
   return (
     <>
@@ -17,4 +17,4 @@ const AuthCard: React.FC<IAuthCardProps> = (props) => {
   );
 };
 
-export default AuthCard;
+export default BaseAuthCard;

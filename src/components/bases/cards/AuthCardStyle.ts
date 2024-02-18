@@ -1,6 +1,7 @@
+import styled from "styled-components";
+
 import { defaultColors } from "@/helpers/constants/colors";
 import { size } from "@/helpers/constants/spacer";
-import styled from "styled-components";
 
 interface ICardWrapperProps {
   viewType: "desktop" | "mobile";
